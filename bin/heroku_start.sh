@@ -32,7 +32,7 @@ fi
 
 echo "starting susi"
 
-cmdline="$cmdline -cp . org.loklak -server -classpath $CLASSPATH -Dlog4j.configurationFile=$LOGCONFIG SusiServer";
+cmdline="$cmdline -cp . org/loklak/* -server -classpath $CLASSPATH -Dlog4j.configurationFile=$LOGCONFIG SusiServer";
 
 eval $cmdline
 #echo $cmdline;
