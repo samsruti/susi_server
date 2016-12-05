@@ -1,4 +1,4 @@
 #!/bin/bash
-rm -rf .grade/
+rm -rf .gradle/
 rm -rf build/
 rm -rf src/main/
