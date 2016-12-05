@@ -21,7 +21,7 @@ fi
 
 CLASSPATH=""
 for N in lib/*.jar; do CLASSPATH="$CLASSPATH$N:"; done
-CLASSPATH="../classes/$CLASSPATH"
+CLASSPATH=".:./classes/:$CLASSPATH"
 
 cmdline="java";
 
@@ -32,9 +32,9 @@ fi
 
 echo "starting susi"
 
-cmdline="$cmdline -cp -server -classpath $CLASSPATH -Dlog4j.configurationFile=$LOGCONFIG org.loklak.SusiServer";
+cmdline="$cmdline -cp . org.loklak -server -classpath $CLASSPATH -Dlog4j.configurationFile=$LOGCONFIG SusiServer";
 
 eval $cmdline
-echo $cmdline;
+#echo $cmdline;
 
 echo "susi server started at port 4000, open your browser at http://localhost:4000"
