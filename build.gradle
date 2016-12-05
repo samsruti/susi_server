@@ -54,3 +54,7 @@ dependencies {
   compile name: 'rome-1.0'
   compile name: 'slf4j-api-1.7.21'
 }
+
+task stage {
+    dependsOn build
+}
