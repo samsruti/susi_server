@@ -1,1 +1,1 @@
-web: java -cp classes/org/loklak/:lib/* SusiServer
+web: java -cp classes/:lib/* org.loklak.SusiServer
