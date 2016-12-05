@@ -1,1 +1,1 @@
-web: sh bin/heroku_start.sh
+web: java -cp classes/org/loklak/:lib/* SusiServer
