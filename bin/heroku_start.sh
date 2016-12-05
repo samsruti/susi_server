@@ -32,7 +32,7 @@ fi
 
 echo "starting susi"
 
-cmdline="$cmdline Dserver.port=$PORT -server -classpath $CLASSPATH -Dlog4j.configurationFile=$LOGCONFIG SusiServer";
+cmdline="$cmdline -server -classpath $CLASSPATH -Dlog4j.configurationFile=$LOGCONFIG SusiServer";
 
 eval $cmdline
 #echo $cmdline;
